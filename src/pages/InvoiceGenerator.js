@@ -127,7 +127,7 @@ const InvoiceGenerator = () => {
         <div className="flex justify-center my-6">
           <img
             src="logo.png" // Replace with actual logo
-            alt="Company Logo"
+            alt="Techgetafrica Logo"
             className="h-20"
           />
         </div>
@@ -221,14 +221,14 @@ const InvoiceGenerator = () => {
           {/* Total Amount */}
           <div className="mt-6 text-right">
             <p className="font-bold text-lg">
-              Total Amount: <span className="text-xl">{calculateTotalAmount().toFixed(2)}</span>
+              Total Amount: <b><span className="text-xl">{calculateTotalAmount().toFixed(2)}</span></b>
             </p>
           </div>
 
           {/* Digital Stamp */}
           <div className="flex justify-center mt-8">
             <div className="bg-blue-500 text-white p-4 rounded-full text-xl font-bold shadow-md">
-              Digital Stamp
+              Approved By Techgetafrica
             </div>
           </div>
 

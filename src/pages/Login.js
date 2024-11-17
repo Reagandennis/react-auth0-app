@@ -5,13 +5,19 @@ const Login = () => {
   const { loginWithRedirect } = useAuth0();
 
   return (
-    <div className="container mx-auto p-6 text-center">
-      <h1 className="text-4xl font-bold mb-4">Login to Your Account</h1>
-      <button
-        onClick={() => loginWithRedirect()}
-        className="bg-blue-600 text-white p-3 rounded-md"
+    <div className="flex flex-col justify-center items-center h-screen space-y-4">
+      <h1 className="text-4xl font-bold">Welcome to Banking Suite</h1>
+      <button 
+        onClick={() => loginWithRedirect()} 
+        className="px-4 py-2 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition"
       >
         Log In
+      </button>
+      <button 
+        onClick={() => loginWithRedirect({ screen_hint: 'signup' })} 
+        className="px-4 py-2 bg-green-600 text-white rounded-lg shadow-lg hover:bg-green-700 transition"
+      >
+        Sign Up
       </button>
     </div>
   );

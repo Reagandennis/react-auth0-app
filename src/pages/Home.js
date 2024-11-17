@@ -5,7 +5,7 @@ const Home = () => {
     <div className="bg-gray-50 font-sans text-gray-900">
 
       {/* Hero Section */}
-      <section className="bg-blue-800 text-white py-24 px-8 rounded-lg shadow-lg">
+      <section className="bg-blue-800 text-white py-24 px-6 rounded-lg shadow-lg">
         <h1 className="text-5xl font-extrabold mb-6 tracking-tight leading-tight">
           Welcome to Our Digital Banking Suite
         </h1>
